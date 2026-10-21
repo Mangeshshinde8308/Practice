@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 
 @RestController //controller+responsebody 
@@ -18,6 +20,12 @@ public class Stdcontroller {
 
 
     }
+    
+    @GetMapping("/test2")
+    public String test2(){
+        return "test2222222222222222222222";
+    } 
+    
     
     
 }
